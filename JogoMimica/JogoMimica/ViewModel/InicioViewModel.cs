@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
+using JogoMimica.Armazenamento;
 
 namespace JogoMimica.ViewModel
 {
@@ -17,6 +18,8 @@ namespace JogoMimica.ViewModel
         }
         private void IniciarJogo()
         {
+            Armazenamento.Armazenamento.Jogo = this.Jogo;
+            Armazenamento.Armazenamento.RodadaAtual = 1;
             App.Current.MainPage = new View.Jogo();
         }
 
