@@ -16,31 +16,8 @@ namespace JogoMimica.View
         {
             InitializeComponent();
 
-            BindingContext = new Grupo();
+            BindingContext = new ViewModel.InicioViewModel();
 
-        }
-        public class Grupo : INotifyPropertyChanged
-        {
-            private string _NomeGrupo1;
-            public string NomeGrupo1
-            {
-                get { return _NomeGrupo1; }
-                set { _NomeGrupo1 = value; PropriedadeMudada("NomeGrupo1");}
-            }
-            public Grupo()
-            {
-                NomeGrupo1 = "OsMachos";
-            }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-
-            private void PropriedadeMudada(string nomePropriedade)
-            {
-                if(PropertyChanged != null)
-                {
-                    PropertyChanged(this,new PropertyChangedEventArgs(nomePropriedade));
-                }
-            }
         }
     }
 }
