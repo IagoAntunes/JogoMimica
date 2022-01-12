@@ -49,15 +49,16 @@ namespace JogoMimica.ViewModel
 
 
             MostrarPalavra = new Command(MostrarPalavraAction);
-            Acertou = new Command();
-            Errou = new Command();
-            Iniciar = new Command();
+            Acertou = new Command(MostrarPalavraAction);
+            Errou = new Command(MostrarPalavraAction);
+            Iniciar = new Command(MostrarPalavraAction);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void MostrarPalavraAction()
         {
+            PalavraPontuacao = 3;
             Palavra = "Sentar";
             IsVisibleBtnMostrar = false;
             IsContainerIniciar = true;
