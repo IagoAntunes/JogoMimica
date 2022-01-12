@@ -6,5 +6,7 @@ namespace JogoMimica.ViewModel
 {
     public class InicioViewModel
     {
+
+
     }
 }

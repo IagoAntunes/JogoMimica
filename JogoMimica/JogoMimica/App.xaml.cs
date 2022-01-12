@@ -10,7 +10,7 @@ namespace JogoMimica
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new View.Inicio();
         }
 
         protected override void OnStart()
