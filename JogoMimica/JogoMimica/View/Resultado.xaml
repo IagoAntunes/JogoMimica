@@ -4,9 +4,13 @@
              x:Class="JogoMimica.View.Resultado">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Grupo 1" FontSize="20"/>
+            <Label Text="30pontos" FontSize="64" HorizontalOptions="Center"/>
+
+            <Label Text="Grupo 2" FontSize="20"/>
+            <Label Text="120pontos" FontSize="64" HorizontalOptions="Center"/>
+
+            <Button Text="Jogar outra vez"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
